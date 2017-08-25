@@ -42,7 +42,6 @@ const Product = ({ node }) =>
 class IndexPage extends React.Component {
   render() {
     const usProductEdges = this.props.data.us.edges
-    const deProductEdges = this.props.data.german.edges
     return (
       <div style={{ marginBottom: rhythm(2) }}>
         <h2>Gatsby's integration with the Contentful Image API</h2>
@@ -64,10 +63,6 @@ class IndexPage extends React.Component {
         </p>
         <h3>en-US</h3>
         {usProductEdges.map(({ node }, i) => <Product node={node} />)}
-        <br />
-        <br />
-        <h3>de</h3>
-        {deProductEdges.map(({ node }, i) => <Product node={node} />)}
       </div>
     )
   }
