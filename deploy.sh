@@ -6,7 +6,7 @@ CWD=`pwd`
 # Clone Pages repository
 cd /tmp
 git clone git@github.com:richardwestenra/gatsby-contentful-static-test.git build
-# cd build && git checkout -b YOUR_BRANCH origin/YOUR_BRANCH # If not using master
+cd build && git checkout -b gh-pages origin/gh-pages # If not using master
 
 # Trigger Gatsby rebuild
 cd $CWD
@@ -22,4 +22,4 @@ git config --global user.name "$GH_NAME"
 
 git add .
 git commit -m "Automated build"
-git push -f origin master
+git push -f origin gh-pages
