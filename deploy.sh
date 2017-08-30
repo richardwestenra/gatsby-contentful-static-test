@@ -17,8 +17,8 @@ cp -r $CWD/public/* /tmp/build
 
 cd /tmp/build
 
-# git config --global user.email "rjwestenra@gmail.com"
-# git config --global user.name "Richard Westenra"
+git config --global user.email "$GH_EMAIL"
+git config --global user.name "$GH_NAME"
 
 git add .
 git commit -m "Automated build"

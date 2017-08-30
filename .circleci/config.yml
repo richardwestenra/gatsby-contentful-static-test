@@ -11,10 +11,7 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - checkout:
-        post:
-          - npm install
-          - bash deploy.sh
+      - checkout
 
       # Download and cache dependencies
       - restore_cache:
@@ -29,6 +26,5 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
-      # - run: yarn test
+
+      - run: bash deploy.sh
