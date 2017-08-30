@@ -8,7 +8,7 @@ CWD=`pwd`
 
 # Clone Pages repository
 cd /tmp
-git clone git@github.com:richardwestenra/gatsby-contentful-static-test.git build
+git clone https://github.com/richardwestenra/gatsby-contentful-static-test.git build
 cd build
 # git remote -v
 # git fetch
