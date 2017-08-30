@@ -1,5 +1,8 @@
 # via https://tinyurl.com/contentful-circleci-webhooks
 
+# show verbose log output
+set -x
+
 # Copy static site
 CWD=`pwd`
 
