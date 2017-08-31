@@ -10,9 +10,7 @@ CWD=`pwd`
 cd /tmp
 git clone https://github.com/richardwestenra/gatsby-contentful-static-test.git build
 cd build
-# git remote -v
-# git fetch
-git checkout --orphan gh-pages # If not using master
+git checkout -b gh-pages origin/gh-pages
 
 # Trigger Gatsby rebuild
 cd $CWD
