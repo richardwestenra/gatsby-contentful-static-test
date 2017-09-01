@@ -1,7 +1,7 @@
-import React from "react"
-import { TypographyStyle } from "react-typography"
-import * as PropTypes from "prop-types"
-import typography from "./utils/typography"
+import React from 'react';
+import { TypographyStyle } from 'react-typography';
+import * as PropTypes from 'prop-types';
+import typography from './utils/typography';
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -25,7 +25,7 @@ class Html extends React.Component {
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
-          id="gatsby-inlined-css"
+          id='gatsby-inlined-css'
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
       )
