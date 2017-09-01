@@ -25,5 +25,5 @@ git config --global user.email "$GH_EMAIL"
 git config --global user.name "$GH_NAME"
 
 git add .
-git commit -m "Automated build"
+git commit -m "Automated build [ci skip]"
 git push -f origin gh-pages
