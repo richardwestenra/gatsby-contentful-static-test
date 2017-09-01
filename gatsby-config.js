@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby with Contentful',
   },
+  pathPrefix: '/gatsby-contentful-static-test',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
