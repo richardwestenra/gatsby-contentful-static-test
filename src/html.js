@@ -42,6 +42,7 @@ class Html extends React.Component {
             name="description"
             content="Gatsby example site using Contentful"
           />
+          <link rel="icon" type="image/x-icon" href={`${__PATH_PREFIX__}/favicon.ico`}>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
