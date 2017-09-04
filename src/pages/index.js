@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
           nodes from a single locale
         </p>
         <h3>en-US</h3>
-        {usProductEdges.map(({ node }, i) => <Product node={node} />)}
+        {usProductEdges.map(({ node }, i) => <Product node={node} key={node.id} />)}
       </div>
     )
   }
